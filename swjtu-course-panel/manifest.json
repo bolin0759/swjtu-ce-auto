@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "西南交大课程学习面板",
+  "version": "1.4.1",
+  "description": "在课程目录页面插入学习进度面板，支持批量在新标签页打开未学习内容",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://e-learning.swjtu.edu.cn/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
